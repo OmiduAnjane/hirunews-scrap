@@ -27,4 +27,4 @@ jobs:
       - name: Tag release
         run: npm dist-tag add axios@${{ github.event.inputs.version }} ${{ github.event.inputs.tag }}
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
