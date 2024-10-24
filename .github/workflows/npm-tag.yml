@@ -25,6 +25,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       ############# TAG RELEASE ##############
       - name: Tag release
-        run: npm dist-tag add axios@${{ github.event.inputs.version }} ${{ github.event.inputs.tag }}
+        run: npm dist-tag add hirunews-scrap@${{ github.event.inputs.version }} ${{ github.event.inputs.tag }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
